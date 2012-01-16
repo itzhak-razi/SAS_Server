@@ -1,0 +1,8 @@
+This Project represent the SAS Server.
+
+1. The project has SMS Listener.
+2. Each SMS that contain the SAS Client format will parse and appear as active event since the user
+choose to move the event to archive.
+3. Long press on specific SMS, and choosing apply coordinate, will load the location parameters into main screen
+4. The show on map button will show the choosen SMS on the google map.
+5. There is an option the show some manual point by entering Latitude and Longitude, than press the save point and after that press show on map button.

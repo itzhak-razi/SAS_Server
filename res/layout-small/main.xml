@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:background="@color/black"
+	xmlns:android="http://schemas.android.com/apk/res/android" >
+
+<LinearLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+   
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/locationHeader"
+        android:textColor="#00ff00"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- empty line -->
+
+    <!-- Client Phone no information -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:textStyle="bold" 
+        android:layout_marginLeft="85dp"/>
+
+    <!-- empty line -->
+
+    <EditText
+        android:id="@+id/phonevalue"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:tag="phoneValue" 
+        android:layout_marginLeft="25dp" 
+        android:layout_marginRight="40dp"/>
+
+    <!-- the Latitude information -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Latitude"
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:textStyle="bold" 
+        android:layout_marginLeft="115dp"/>
+
+    <EditText
+        android:id="@+id/latitudeValue"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:tag="latitudeValue" 
+        android:layout_marginLeft="25dp" 
+        android:layout_marginRight="40dp"/>
+
+    <!-- the Longitude information -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Longitude"
+        android:textColor="#ff0000"
+        android:textSize="18sp"
+        android:textStyle="bold" 
+        android:layout_marginLeft="110dp"/>
+
+    <EditText
+        android:id="@+id/longitudeValue"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:tag="longitudeValue" 
+        android:layout_marginLeft="25dp" 
+        android:layout_marginRight="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="#666666"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+   	<LinearLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp" 
+    android:orientation="horizontal" >
+    
+	    <Button
+	        android:id="@+id/back_to_sms"
+	        android:layout_width="150dp"
+	        android:layout_height="40dp"
+	        android:layout_gravity="center"
+	        android:onClick="smsButtonHandler"
+	        android:text="Sms Database"
+	        android:textSize="14px"
+	        android:textStyle="bold" />
+	    
+	    <Button
+        android:id="@+id/optional"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:onClick="saveButtonHandler"
+        android:text="Save Points"
+        android:textSize="14px"
+        android:textStyle="bold" />
+   	</LinearLayout>
+	<LinearLayout 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	     android:layout_marginLeft="10dp" 
+	    android:orientation="horizontal" >	    <Button
+	        android:id="@+id/back_to_map"
+	        android:layout_width="150dp"
+	        android:layout_height="40dp"
+	        android:layout_gravity="center"
+	        android:onClick="mapButtonHandler"
+	        android:text="Show On Map"
+	        android:textSize="14px"
+	        android:textStyle="bold" />
+	    <Button android:id="@+id/show_all_points"
+	        android:layout_width="150dp"
+	        android:layout_height="40dp"
+	        android:layout_gravity="center"
+	        android:onClick="showAllPointsButtonHandler"
+	        android:text="Show All Points"
+	        android:textSize="14px"
+	        android:textStyle="bold" />
+	</LinearLayout>
+
+</LinearLayout>
+</AbsoluteLayout>
+    

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- the Header about the Location Parameters -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/locationHeader"
+        android:textColor="#00ff00"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <!-- empty line -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- Client Phone no information -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Client Phone No: __________ "
+        android:textColor="#666666"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- empty line -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- the Longitude information -->
+
+    <TextView
+        android:id="@+id/longitudeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:text="@string/setlongvalue"
+        android:textColor="#ff0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- empty line -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="#666666"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <!-- the Latitude information -->
+
+    <TextView
+        android:id="@+id/latitudeValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dip"
+        android:text="@string/setlatvalue"
+        android:textColor="#ff0000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=" "
+        android:textColor="#666666"
+        android:textSize="38sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/back_to_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="buttonClickHandler"
+        android:text="Map" />
+
+    <Button
+        android:id="@+id/back_to_video"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="buttonClickHandler"
+        android:text="Video" />
+
+    <Button
+        android:id="@+id/back_to_sms"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="buttonClickHandler"
+        android:text="SMS" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="98dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.56"
+        android:src="@drawable/sas_app_icon" 
+        android:layout_gravity="center"/>
+
+</LinearLayout>

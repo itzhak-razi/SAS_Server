@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+     <item android:id="@+id/Return" android:title ="Undo Archive" />
+     <item android:id="@+id/FetchArchive" android:title  ="Apply Coordinates" />
+</menu>
